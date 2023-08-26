@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="fundo">
+        <h1>Pablo Henrique</h1>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+
+            <table>
+                <tr>
+                    <td><button class="button" onclick="clean()">C</button></td>
+                    <td><button class="button" onclick="backspace()"><</button></td>
+                    <td><button class="button" style="width: 42px;">/ </button></td>
+                    <td><button class="button" onclick="select('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="select('7')">7</button></td>
+                    <td><button class="button" onclick="select('8')">8</button></td>
+                    <td><button class="button" onclick="select('9')">9</button></td>
+                    <td><button class="button" style="width: 42px;" onclick="select('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="select('6')">6</button></td>
+                    <td><button class="button" onclick="select('5')">5</button></td>
+                    <td><button class="button" onclick="select('4')">4</button></td>
+                    <td><button class="button" onclick="select('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="select('3')">3</button></td>
+                    <td><button class="button" onclick="select('2')">2</button></td>
+                    <td><button class="button" onclick="select('1')">1</button></td>
+                    <td rowspan="2"><button class="button" style="height: 115px; width: 43px;" onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="button" style="width: 95px;" onclick="select('0')">0</button></td>
+                    <td><button class="button" style="width: 42px;" onclick="select('.')">.</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
